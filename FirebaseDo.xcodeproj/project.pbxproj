@@ -29,6 +29,7 @@
 		C48B10171F0AF8E6001F0E66 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C48B101D1F0AFB5F001F0E66 /* MasterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
 		C48B101F1F0AFC85001F0E66 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
+		C4D3E4981F1C6508000DE13F /* FirebaseDo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FirebaseDo.entitlements; sourceTree = "<group>"; };
 		D651B1AAF9BFC6E7F5D2B53C /* Pods_FirebaseDo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FirebaseDo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -82,6 +83,7 @@
 		C48B100A1F0AF8E6001F0E66 /* FirebaseDo */ = {
 			isa = PBXGroup;
 			children = (
+				C4D3E4981F1C6508000DE13F /* FirebaseDo.entitlements */,
 				C48B100B1F0AF8E6001F0E66 /* AppDelegate.swift */,
 				C48B100D1F0AF8E6001F0E66 /* HomeViewController.swift */,
 				C48B101D1F0AFB5F001F0E66 /* MasterViewController.swift */,
@@ -131,6 +133,11 @@
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = UU98N6FWB5;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -347,6 +354,7 @@
 			baseConfigurationReference = 65E0D9A6210C832D870DE1F6 /* Pods-FirebaseDo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = FirebaseDo/FirebaseDo.entitlements;
 				DEVELOPMENT_TEAM = UU98N6FWB5;
 				INFOPLIST_FILE = FirebaseDo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -361,6 +369,7 @@
 			baseConfigurationReference = 7661CD9ABEA1D29DF09B7FFD /* Pods-FirebaseDo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = FirebaseDo/FirebaseDo.entitlements;
 				DEVELOPMENT_TEAM = UU98N6FWB5;
 				INFOPLIST_FILE = FirebaseDo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
